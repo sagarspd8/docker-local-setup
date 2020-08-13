@@ -1,4 +1,4 @@
-################ Important commands to create a local database on MYSQL:
+################ Important commands to create a local database on MYSQL: ##############################
 
 Step 1)
 docker run -d -p 3306:3306 --name mysql-server -v ~/Documents/microservice-training-code/mysql_db/mysql:/var/lib/mysql -e MYSQL_ROOT_USER=root -e MYSQL_ROOT_PASSWORD=PASSWORD mysql:latest 
@@ -6,4 +6,4 @@ Step 2)
 docker exec -it mysql-server bash
 Step 3)
 mysql -uroot -p<PASSWORD>
-ls -
+################ end ##############################
