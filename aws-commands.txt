@@ -8,48 +8,50 @@
             systemctl enable httpd
             echo "welcome to web $(hostname -f)" > /var/www/html/index.html
 
-    1  clear
-    2  lbblk
-    3  lsblk
-    4  sudo file -s /dev/xvdb
-    5  sudo mkfs -t ext4 /dev/xvdb
-    6  sudo file -s /dev/xvdb
-    7  sudo mkdir /data
-    8  sudo mount /dev/xvdb /data
-    9  cd /data
-   10  sudo touch hello.txt
-   11  ls -ltr
-   12  lsblk
+EBS mount steps 
+
+command lbblk
+sudo file -s /dev/xvdb
+sudo mkfs -t ext4 /dev/xvdb
+sudo file -s /dev/xvdb
+sudo mkdir /data
+sudo mount /dev/xvdb /data
+cd /data
+sudo touch hello.txt
+ls -ltr
+lsblk
+
+EFX mount steps 
 
    sudo cp /etc/fstab /etc/fstab.orig
 
-       1  clear
-    2  lbblk
-    3  lsblk
-    4  sudo file -s /dev/xvdb
-    5  sudo mkfs -t ext4 /dev/xvdb
-    6  sudo file -s /dev/xvdb
-    7  sudo mkdir /data
-    8  sudo mount /dev/xvdb /data
-    9  cd /data
-   10  sudo touch hello.txt
-   11  ls -ltr
-   12  lsblk
-   13  history
-   14  clear
-   15  sudo cp /etc/fstab /etc/fstab.orig
-   16  sudo vi /etc/fstab
-   17  cat /etc/fstab
-   18  sudo vi /etc/fstab
-   19  sudo file -s /dev/xvdb
-   20  sudo unmount /data
-   21  sudo umount /data
-   22  cd ../
-   23  sudo umount /data
-   24  lsblk
-   25  sudo mount -a
-   26  lsblk
-   27  history
+    clear
+    lbblk
+    lsblk
+    sudo file -s /dev/xvdb
+    sudo mkfs -t ext4 /dev/xvdb
+    sudo file -s /dev/xvdb
+    sudo mkdir /data
+    sudo mount /dev/xvdb /data
+    cd /data
+    sudo touch hello.txt
+    ls -ltr
+    lsblk
+    history
+    clear
+    sudo cp /etc/fstab /etc/fstab.orig
+    sudo vi /etc/fstab
+    cat /etc/fstab
+    sudo vi /etc/fstab
+    sudo file -s /dev/xvdb
+    sudo unmount /data
+    sudo umount /data
+    cd ../
+    sudo umount /data
+    lsblk
+    sudo mount -a
+    lsblk
+    history
 
 // S3 presigned commands
 
